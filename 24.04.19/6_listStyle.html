@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>listStyle</title>
+  </head>
+  <style>
+    ul {
+      border-top: 1px solid red;
+      border-bottom: 1px solid red;
+      padding: 10px 0;
+      list-style-type: none;
+      text-align: center;
+
+      /* list-style-image: url(/resources/check.png); */
+    }
+    ul li {
+      display: inline;
+      text-transform: uppercase;
+      padding: 10px;
+      letter-spacing: 10px 10px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <!-- <ul>
+      <li>
+        <img src="/resources/check.png" width="10" height="10" />
+        아메리카노
+      </li>
+      <li>
+        <img src="/resources/check.png" width="10" height="10" />
+        아이스티
+      </li>
+      <li>
+        <img src="/resources/check.png" width="10" height="10" />
+        자몽허니블랙티
+      </li>
+    </ul>
+    <ul> -->
+    <ul>
+      <li><a href="#" class="deco">Home</a></li>
+      <li><a href="#" class="deco">Blog</a></li>
+      <li><a href="#" class="deco">About</a></li>
+      <li><a href="#" class="deco">Contact</a></li>
+    </ul>
+  </body>
+</html>
