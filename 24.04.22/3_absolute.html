@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+</head>
+<style>
+    #one{
+        background-color: gray;
+        width: 800px;
+        height: 500px;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+    #two{
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        /* left: 50px;
+        top: 50px; */
+        
+    }
+    #three{
+        background-color: brown;
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        left: 200px;
+        top: 200px;
+    }
+</style>
+<body>
+    <div id="one">
+      <div id="two">
+        block #2<br>position: absolute;
+      </div>
+    </div>
+    <div id="three"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex Align</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    height: 800px;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+ border: 5px solid red;
+ padding: 0;
+}
+li{
+    border: 2px solid gray;
+    background-color: blanchedalmond;
+}
+/* #li1 {
+    align-self:flex-start;
+} */
+
+/* flex-wrap
+nowrap : 기본값, 부모 넓이에 맞게 요소들의 넓이를 강제 축소
+wrap : 부모 넓이보다 요소들의 총 넓이가 크다면 나머지 요소들을 다음줄로 줄바꿈
+wrap-reverse : 줄바꿈 하는 요소들을 역순으로 배치 */
+
+
+</style>
+<body>
+    <ul>
+        <li id="li1">거북이</li>
+        <li id="li2">호랑이</li>
+        <li id="li 3">다람쥐</li>
+        <li id="li 4">고라니</li>
+        <li id="li 5">꼬끼리</li>
+
+        <!-- align-content 확인용 -->
+        <li id="li1">거북이</li>
+        <li id="li2">호랑이</li>
+        <li id="li 3">다람쥐</li>
+        <li id="li 4">고라니</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+        <li id="li 5">꼬끼리</li>
+    </ul>
+</body>
+</html>
