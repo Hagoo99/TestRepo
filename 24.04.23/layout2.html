@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    margin: 0;}
+
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+          }
+    
+        #header{
+        display: flex;
+        background-color: yellow;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+    }   
+    #main{
+        /* background-color: aqua; */
+        /* flex-grow: 4; */
+        display: flex;
+        margin-bottom: 10px;}
+
+        #nav{
+            display: flex;
+        background-color: pink;
+         
+        font-size: 1em;
+    text-align: center;
+
+}
+        
+
+        #content{
+        /* background-color: bisque; */
+        flex-grow: 2;
+        display: flex;
+        flex-direction: row;
+        }
+
+        .section {
+      background-color: rgb(238, 228, 228);
+      font-size: 15px;
+      height: 200px;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-left: 4%;
+      padding-right: 4%;
+     
+        }
+
+        #footer{
+        background-color: plum;
+       flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;}
+
+    
+
+        a{
+            text-decoration: none;
+        }
+
+        div{
+        border-radius: 50px;}
+        a:hover{
+            color: blueviolet;
+        }
+        ul {
+      
+      padding: 10px 0;
+      list-style-type: none;
+      text-align: center;}
+      
+      ul li {
+      display: inline;
+      text-transform: uppercase;
+      padding: 0 10px;
+      letter-spacing: 10px;}
+
+    
+    
+</style>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>
+            <img src="/resources/img/쇼핑.jpg" width="80" height="50"/>
+            <a href="#">Web Shopping</a>
+        </h1>
+            </div>
+          
+                
+    
+<div id="main">
+        <div id="nav">
+           <ul>
+               <li><a href="layout2.html">Home</a></li>
+                <li><a href="layout2.html">About</a></li>
+                <li>><a href="layout2.html">News</a></li>
+                <li><a href="layout2.html">My Account</a></li>
+                <li><a href="layout2.html">Contacts</a></li>
+            </ul>
+            </div>
+<div id="content">
+<div class="section">
+    <h3>옛것</h3>
+    <p>고물상 컴퓨터</p>
+    <img src="/resources/img/구형컴퓨터.jpg" width="50%"/>
+    <input type="submit" value="장바구니 +">
+    </div>
+<div class="section">
+    <h3>최신</h3>
+<p>최신 컴퓨터</p>
+<img src="/resources/img/최신.jpg" width="50%" />
+<input type="submit" value="장바구니 +">
+</div>
+<div class="section">
+    <h3>APPLE</h3>
+<P>APPLE 맥북</P>
+<img src="/resources/img/사과jpg.jpg" width="50%" />
+<input type="submit" value="장바구니 +">
+</div>
+</div>
+</div>
+
+<div id="footer">
+    <p>2024.05.05 DJ SHOPPING MALL</p>
+    </div>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        
+        font-size: 20px;
+    }
+    body > div{
+        display: flex;
+        justify-content: space-around;
+        border: 5px solid red;
+        border-radius: 10px;
+
+        height: 700px;
+        align-items: center;
+        
+    }
+    div > div{
+        background-color: antiquewhite;
+        border: 2px solid teal;
+        border-radius: 5px;
+        padding: 20px;
+        flex-grow: 1;
+        text-align: center;
+        
+    }
+    div:nth-child(1){
+        align-self: flex-start;
+    }
+    div:nth-child(3){
+        align-self: flex-end;}
+</style>
+<body>
+    <h1>0. 아래와 같이 만들어 보세요.</h1>
+<div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+</body>
+</html>

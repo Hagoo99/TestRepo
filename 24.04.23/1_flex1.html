@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제1</title>
+</head>
+<style>
+   
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid goldenrod;
+        
+        height: 100%;
+    }
+    #main{
+        flex-grow: 3;
+        display: flex;}
+        /* background-color: palevioletred;
+        flex-grow: 3;
+     */
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       width: 500px; height: 100px; 
+        background-color: gray;
+        border-radius: 20px;
+     
+    }
+    #nav{
+        background-color: antiquewhite;
+        border-radius: 20px;
+        width: 150px; height: 300px;
+    
+    }
+    #content{
+        background-color: cadetblue;
+        border-radius: 20px;
+        width: 350px; height: 300px;
+    
+    }
+    #footer{
+        background-color: burlywood;
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div id="header">My Blog Page</div>
+        <div id="main">
+            <div id="nav">
+            <h3>Links</h3>
+                <li>w3xchools</li>
+                <li>Naver</li>
+                <li>Daum</li>
+            </ul>
+        <div id="content">Semantic Tags</div>
+        </div>
+        <div id="footer">Copyright(c)2019 Hong</div>
+    </div>
+</body>
+</html>
