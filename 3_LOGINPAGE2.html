@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    html,body,#wrapper{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: #c4c3ca;
+    }
+    #wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #main{
+        width: 500px;
+        height: 500px;
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+    }
+    h3{
+        margin: 50px;
+        text-align: center;
+    }
+    #input-section{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #input-section>div{
+        margin-top: 2%;
+    }
+    
+
+    #input-section div{
+        width: 90%;
+        position: relative;
+    }
+   
+    
+    #input-section input:not([type='submit']){
+        width: 100%;
+        /* height: 100%; */
+        padding:2% 5%;
+        
+    }
+    #input-section input[tbody='submit']{
+        margin-top: 2%;
+        width: 100%;
+        height: 30%;
+        
+    }
+    #forgetPassword {
+      height: 10%;}
+</style>
+<body>
+    <div id="wrapper">
+        <div id="main">
+    <h3>Log In</h3>
+    <form id="input-section">
+        
+        <div>
+            <i class="fas fa-wifi icon"></i>
+            <input type="text" placeholder="Your Email"/>
+        </div>
+        <div>
+            <i class="fas fa-wifi icon"></i>
+            <input type="password" placeholder="Your password"/>
+        </div>
+        <input type="submit" value="SUBMIT"/>
+    </form>
+    <div id="forgetPassword">
+    <a href="#">Forget your password?</a>
+</div>
+</div>
+    </div>
+</body>
+</html>
