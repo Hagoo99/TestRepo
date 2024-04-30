@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  * {
+     box-sizing: border-box;
+  }
+  body {
+     margin: 0;
+  }
+  html, body, #wrapper {
+     width: 100%;
+     height: 100%;
+  }
+  #wrapper {
+      padding: 1rem;
+    }
+    a {
+      display: inline-block;
+      font-size: 22px;
+      padding: 20px 60px;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+/* Fill up */
+.btnborder{
+    border: 2px solid #4dbde5;
+    color: #4dbde5;
+    overflow: hidden;
+    transition: .1s;
+    position: relative;
+}
+
+.btnborder::before{
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    background-color: #4dbde5;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: .1s;
+    transform-origin: 50% 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.btnborder:hover {
+      color: white;
+    }
+
+.btnborder:hover::before{
+    transform: scaleY(1);
+}
+    /* Fill up */
+
+    /* Pulse */
+
+.Pulse{
+    border: 2px solid #4dbde5;
+    color: white;
+    background-color: #4dbde5;
+    transition: .3s;
+    /* box-shadow: 0 0 0 5px #4dbde5; */
+}
+
+.Pulse:hover{
+    animation: pulse .3s;
+   /* box-shadow: 0 0 0 20px; */
+}
+
+@keyframes pulse{
+    from{
+        box-shadow: 0 0 0 0 #4dbde5;
+    }
+    to{
+        box-shadow: 0 0 0 18px transparent;
+    }
+}
+
+                    /* Pulse */
+
+                    /* Line */
+
+    .Line{
+   
+    color: #4dbde5;
+    transition: 0.3s;
+    transition: .1s;
+    position: relative;}
+
+    .Line::before, .Line::after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transform: scaleX(0);
+        left: 0;
+        
+    }
+    .Line::before{
+        top: 0;
+
+    }
+    .Line::after{
+        bottom: 0;
+    }
+    .Line:hover::before,
+    .Line:hover::after{
+        background-color: #4dbde5;
+        transform: scaleX(1.2);
+    }
+
+    .Line:hover{
+        letter-spacing: 5px;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div class="content">
+          <h2>Fill Up Button</h2>
+          <a href="#" class="btnborder skyblue">Fill Up</a>
+        </div>
+        <div class="content">
+            <h2>Pulse Button</h2>
+            <a href="#" class="Pulse Button">Pulse</a>
+          </div>
+          <div class="content">
+            <h2>Line Button</h2>
+            <a href="#" class="Line Button">Line</a>
+          </div>
+        </div>
+</body>
+</html>
